@@ -1,0 +1,45 @@
+[
+  {
+    "isGroupChat": false,
+    "users": [
+      {
+        "name": "John Doe",
+        "email": "john@example.com"
+      },
+      {
+        "name": "Jane Doe",
+        "email": "jane@example.com"
+      }
+    ],
+    "_id": "5e9f8f8f8f8f8f8f8f8f8f8",
+    "chatName": "John Doe"
+  },
+  {
+    "isGroupChat": false,
+    "users": [
+      {
+        "name": "Guest User",
+        "email": "guest@example.com"
+      },
+      {
+        "name": "Simon Doe",
+        "email": "simon@example.com"
+      }
+    ],
+    "_id": "5e9f8f8f8f8f8f8f8f8f8f9",
+    "chatName": "Guest User"
+  },
+  {
+    "isGroupChat": true,
+    "users": [
+      {
+        "name": "Jim Doe",
+        "email": "jim@example.com"
+      },
+      { "name": "Carl Doe", "email": "carl@example.com" },
+      { "name": "Mary Doe", "email": "mary@example.com" }
+    ],
+    "_id": "5e9f8f8f8f8f8f8f8f8f8fa",
+    "chatName": "Jim Doe"
+  }
+]
