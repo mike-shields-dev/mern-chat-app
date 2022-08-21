@@ -9,11 +9,8 @@ export default function Chats() {
     setChats(data);
   };
 
-  useEffect(() => {
-    fetchChats();
-  }, []);
+  useEffect(() => fetchChats, []);
 
-  fetchChats();
   return (
     <div>
       {chats.map((chat) => (
