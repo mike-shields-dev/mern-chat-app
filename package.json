@@ -4,12 +4,17 @@
   "description": "MERN & Websockets Realtime Chat App",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/index.js",
+    "dev": "nodemon backend/index.js"
   },
   "keywords": [],
   "author": "Michael Shields",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
   }
 }
