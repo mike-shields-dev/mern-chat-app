@@ -25,6 +25,7 @@ export default function SignUp() {
       <FormControl id="first-name">
         <FormLabel>Name:</FormLabel>
         <Input
+          type="text"
           placeholder="Enter your name"
           value={name}
           isInvalid = { !name.length }
@@ -32,7 +33,7 @@ export default function SignUp() {
           onChange={(e) => setName(e.target.value)}
         />
       </FormControl>
-      <FormControl id="first-name">
+      <FormControl id="email">
         <FormLabel>Email:</FormLabel>
         <Input
           type="email"
@@ -42,15 +43,15 @@ export default function SignUp() {
           onChange={(e) => setEmail(e.target.value)}
         />
       </FormControl>
-      <FormControl>
+      <FormControl id="password">
         <FormLabel>Password:</FormLabel>
         <InputGroup>
           <Input
             type={isPasswordShowing ? "text" : "password"}
             placeholder="Enter your password"
-            onChange={(e) => setPassword(e.target.value)}
             isInvalid = { !password }
             required
+            onChange={(e) => setPassword(e.target.value)}
           />
           <InputRightElement width="4.5rem">
             <Button h="1.75rem" size="sm" onClick={handleClick}>
@@ -59,7 +60,7 @@ export default function SignUp() {
           </InputRightElement>
         </InputGroup>
       </FormControl>
-      <FormControl>
+      <FormControl id="confirm-password">
         <FormLabel>Confirm Password:</FormLabel>
         <InputGroup>
           <Input
@@ -76,7 +77,7 @@ export default function SignUp() {
           </InputRightElement>
         </InputGroup>
       </FormControl>
-      <FormControl>
+      <FormControl id="picture">
         <FormLabel>Upload Picture:</FormLabel>
         <Input
           type="file"
