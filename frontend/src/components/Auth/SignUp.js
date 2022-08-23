@@ -27,6 +27,8 @@ export default function SignUp() {
         <Input
           placeholder="Enter your name"
           value={name}
+          isInvalid = { !name.length }
+          required
           onChange={(e) => setName(e.target.value)}
         />
       </FormControl>
@@ -47,6 +49,8 @@ export default function SignUp() {
             type={isPasswordShowing ? "text" : "password"}
             placeholder="Enter your password"
             onChange={(e) => setPassword(e.target.value)}
+            isInvalid = { !password }
+            required
           />
           <InputRightElement width="4.5rem">
             <Button h="1.75rem" size="sm" onClick={handleClick}>
@@ -61,7 +65,8 @@ export default function SignUp() {
           <Input
             type={isPasswordShowing ? "text" : "password"}
             placeholder="Confirm your password"
-            isInvalid={password !== confirmPassword}
+            isInvalid={!confirmPassword || password !== confirmPassword}
+            required
             onChange={(e) => setConfirmPassword(e.target.value)}
           />
           <InputRightElement width="4.5rem">
